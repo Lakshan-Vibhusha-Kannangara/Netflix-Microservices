@@ -1,0 +1,27 @@
+POST http://localhost:8080/signup
+Content-Type: application/json
+
+{
+  "email": "test@example.com",
+  "password": "testPassword",
+  "fullName": "Test User"
+}
+
+<> 2025-03-14T220209.500.json
+<> 2025-03-14T220110.404.json
+<> 2025-03-14T214849.500.json
+<> 2025-03-14T214822.201.json
+
+###
+POST http://localhost:8080/signin
+Content-Type: application/json
+
+{
+  "email": "test@example.com",
+  "password": "testPassword",
+  "fullName": "Test User"
+}
+
+<> 2025-03-14T220247.200.json
+<> 2025-03-14T220239.200.json
+<> 2025-03-14T220236.200.json
