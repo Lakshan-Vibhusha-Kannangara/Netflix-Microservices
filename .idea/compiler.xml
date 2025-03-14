@@ -12,6 +12,7 @@
         <module name="streaming-service" />
         <module name="content-service" />
         <module name="notification-service" />
+        <module name="service-registry" />
       </profile>
       <profile name="Annotation profile for microservices-parent" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -30,6 +31,7 @@
       <module name="api-gateway" options="-parameters" />
       <module name="content-service" options="-parameters" />
       <module name="notification-service" options="-parameters" />
+      <module name="service-registry" options="-parameters" />
       <module name="streaming-service" options="-parameters" />
       <module name="user-service" options="-parameters" />
     </option>

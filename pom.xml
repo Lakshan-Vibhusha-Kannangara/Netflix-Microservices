@@ -16,6 +16,7 @@
         <module>streaming-service</module>
         <module>notification-service</module>
         <module>analytics-service</module>
+        <module>service-registry</module>
     </modules>
 
     <properties>
