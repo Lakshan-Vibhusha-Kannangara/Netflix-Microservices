@@ -1,6 +1,7 @@
 package com.vibhusha.userservice.repository;
 
-import com.vibhusha.userservice.entity.User;
+
+import com.vibhusha.userservice.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

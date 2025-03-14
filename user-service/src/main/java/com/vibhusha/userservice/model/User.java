@@ -1,10 +1,11 @@
-package com.vibhusha.userservice.entity;
+package com.vibhusha.userservice.model;
 
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.vibhusha.userservice.enums.USER_ROLE;
 import jakarta.persistence.*;
 import lombok.Data;
+
 @Entity
 @Data
 public class User {
@@ -22,6 +23,7 @@ public class User {
     private TwoFactorAuth twoFactorAuth = new TwoFactorAuth();
 
     private USER_ROLE role = USER_ROLE.ROLE_CUSTOMER;
+
+
+
 }
-
-

@@ -1,4 +1,5 @@
-package com.vibhusha.userservice.entity;
+package com.vibhusha.userservice.model;
+
 
 import com.vibhusha.userservice.enums.VerificationType;
 import lombok.Data;
