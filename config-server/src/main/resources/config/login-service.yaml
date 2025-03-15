@@ -1,0 +1,21 @@
+server:
+  port: 8089
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+allowed_origins:
+  - http://localhost:8060/**
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/login
+    username: root
+    password: 989o987Sun#
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update

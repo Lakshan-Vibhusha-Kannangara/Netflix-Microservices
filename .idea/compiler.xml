@@ -7,12 +7,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="streaming-service" />
+        <module name="config-server" />
         <module name="content-service" />
-        <module name="Netflix-Microservices" />
+        <module name="analytics-service" />
+        <module name="api-gateway" />
+        <module name="streaming-service" />
         <module name="service-registry" />
+        <module name="notification-service" />
       </profile>
-      <profile name="Annotation profile for user-service" enabled="true">
+      <profile name="Annotation profile for microservices-parent" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -23,10 +26,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="analytics-service" target="17" />
-      <module name="api-gateway" target="17" />
-      <module name="microservices-parent" target="1.5" />
-      <module name="notification-service" target="17" />
+      <module name="Netflix-Microservices" target="17" />
       <module name="service-registry (1)" target="17" />
       <module name="service-registry (2)" target="17" />
     </bytecodeTargetLevel>
@@ -36,6 +36,7 @@
       <module name="Netflix-Microservices" options="-parameters" />
       <module name="analytics-service" options="-parameters" />
       <module name="api-gateway" options="-parameters" />
+      <module name="config-server" options="-parameters" />
       <module name="content-service" options="-parameters" />
       <module name="notification-service" options="-parameters" />
       <module name="service-registry" options="-parameters" />

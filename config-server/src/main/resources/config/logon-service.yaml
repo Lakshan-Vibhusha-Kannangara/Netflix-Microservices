@@ -1,0 +1,18 @@
+server:
+  port: 8090
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+spring.datasource:
+  driver-class-name: com.mysql.cj.jdbc.Driver
+  url: jdbc:mysql://localhost:3306/microserv
+  username: root
+  password: 989o987Sun#
+
+spring.jpa:
+  show-sql: true
+  hibernate:
+    ddl-auto: update
