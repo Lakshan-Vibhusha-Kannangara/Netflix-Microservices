@@ -7,14 +7,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="analytics-service" />
-        <module name="api-gateway" />
         <module name="streaming-service" />
         <module name="content-service" />
-        <module name="notification-service" />
+        <module name="Netflix-Microservices" />
         <module name="service-registry" />
       </profile>
-      <profile name="Annotation profile for microservices-parent" enabled="true">
+      <profile name="Annotation profile for user-service" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -24,14 +22,25 @@
         <module name="user-service" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="analytics-service" target="17" />
+      <module name="api-gateway" target="17" />
+      <module name="microservices-parent" target="1.5" />
+      <module name="notification-service" target="17" />
+      <module name="service-registry (1)" target="17" />
+      <module name="service-registry (2)" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Netflix-Microservices" options="-parameters" />
       <module name="analytics-service" options="-parameters" />
       <module name="api-gateway" options="-parameters" />
       <module name="content-service" options="-parameters" />
       <module name="notification-service" options="-parameters" />
       <module name="service-registry" options="-parameters" />
+      <module name="service-registry (1)" options="-parameters" />
+      <module name="service-registry (2)" options="-parameters" />
       <module name="streaming-service" options="-parameters" />
       <module name="user-service" options="-parameters" />
     </option>
